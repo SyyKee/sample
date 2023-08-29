@@ -1,0 +1,22 @@
+<h1>test</h1>
+
+
+<form #myForm="ngForm">
+<div class="container" appClickedOutside (clickedOutside)="close()" >
+<div class="input-icons" [ngStyle]="{'background-color':  disabled ? '#EEEEE' : ''}">
+    <i class="fa fa-search icon"></i>
+    <input name="dropdown" nameclass="input-field" type="text" placeholder="Search" [(ngModel)]="term" (click)="onFocus()" [value]="capturedText">
+    <i class="fa fa-close icon last" (click)="clearForm(myForm)"></i>
+</div>
+<div *ngIf="show && items.length!=0" class="container-list" >
+    <ul *ngFor="let item of items | filter:term; let i = index">
+        <div [ngStyle]="{'border-top': i === deviderLocation ? '2px solid #eeeeee' : ''}" class="options" (click)="captureText(item)">
+            <i *ngIf="iconListLeft" class="fa fa-search icon options-icon"></i>
+            <p class="list-item options-icon paragraph">{{item}}</p>
+            <i *ngIf="iconListRight" class="fa fa-search icon options-icon" (click)="rightIcon()"></i>
+        </div>
+    </ul>
+</div>
+
+</div>
+</form>

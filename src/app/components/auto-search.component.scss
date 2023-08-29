@@ -1,0 +1,95 @@
+input{
+    border: darksalmon;
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    width: 318px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul:hover{
+    background-color: #EEEEEE;
+}
+
+ul:active{
+    background-color: #E0E0E0;
+}
+i{
+    text-align: center;
+}
+
+
+
+.container{
+    width: 320px;
+    height: 40px;
+}
+
+ 
+.input-icons {
+    padding-left: 10px ;
+    width: 320px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    display: flex;
+    background-color: #ffffff;
+    border: solid;
+}
+.last{
+    margin-left: auto;
+}
+
+.icon {
+    padding: 15px;
+    padding-left: 0;
+    min-width: 40px;
+}
+ 
+.input-field {
+    width: 100%;
+}
+
+
+.container-list{
+    width: 320px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);   
+    margin-top : 10px ;
+    border-color: #1B1C32;
+    border: solid 1px;
+}
+
+.list-item{
+    width: 100%;
+    height: 100%;
+}
+
+.options{
+    margin: 0px;
+    padding: 0px;
+    width: 318px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-icon{
+    text-align:center left;
+    line-height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+.paragraph{
+padding-left: 18px;
+}
