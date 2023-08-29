@@ -7,6 +7,8 @@ import { Pipe, PipeTransform, Injectable } from "@angular/core";
 @Injectable()
 export class FilterPipe implements PipeTransform {
 
+  
+
   /**
      * @param items object from array
      * @param term term's search
@@ -15,9 +17,14 @@ export class FilterPipe implements PipeTransform {
   transform(items: any, term: string, excludes: any = []): any {
     if (!term || !items) return items;
 
-    return FilterPipe.filter(items, term, excludes);
-  }
+    const filteredItems = FilterPipe.filter(items, term, excludes);
 
+    if (filteredItems.length === 0) {
+      return [{ message: 'No element found' }];
+    }
+
+    return filteredItems;
+  }
   /**
    *
    * @param items List of items to filter

@@ -26,6 +26,7 @@ ul:active{
 }
 i{
     text-align: center;
+    padding-left: 15px !important;
 }
 
 
@@ -37,15 +38,25 @@ i{
 
  
 .input-icons {
-    padding-left: 10px ;
     width: 320px;
     margin-bottom: 10px;
     border-radius: 2px;
     display: flex;
     background-color: #ffffff;
-    border: solid;
+    border: 1px solid #1B1C32;
 }
-.last{
+.input-icons:focus{
+    background-color: #252525;
+    border: 2px solid #1B1C32;
+}
+
+.hoverable:hover .icon,
+.hoverable:hover .input-field {
+    background-color: #EEEEEE;
+}
+
+
+.last i{
     margin-left: auto;
 }
 
@@ -58,7 +69,6 @@ i{
 .input-field {
     width: 100%;
 }
-
 
 .container-list{
     width: 320px;
@@ -84,12 +94,14 @@ i{
     justify-content: center;
 }
 
+
 .options-icon{
     text-align:center left;
     line-height: 40px;
     margin: 0px;
     padding: 0px;
+    padding-left: 0px !important;
 }
 .paragraph{
-padding-left: 18px;
+padding-left: 5px;
 }
