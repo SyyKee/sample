@@ -5,7 +5,7 @@
 <div class="container" appClickedOutside (clickedOutside)="close()" >
 <div class="input-icons hoverable" [ngStyle]="{'background-color':  disabled==true ? '#D9D9D9' : '','border':  border==true ? '2px solid #1B1C32' : ''}">
     <i class="icon" [ngStyle]="{'background-color':  disabled==true ? '#D9D9D9' : ''}"><mat-icon  fontIcon="search"></mat-icon></i>
-    <input name="dropdown" class="input-field" type="text" placeholder="Search" [(ngModel)]="term" (click)="onFocus()" [value]="capturedText" [disabled]="disabled==true ? true : false" [ngStyle]="{'background-color':  disabled==true ? '#D9D9D9' :{}}"/>
+    <input name="dropdown" class="input-field" type="text" placeholder="Search" [(ngModel)]="term" (click)="onFocus()" [value]="capturedText" [disabled]="disabled==true ? true : false" [ngStyle]="{'background-color':  disabled==true ? '#D9D9D9' :{}}" autocomplete="off"/>
     <i *ngIf="cross" class="icon last" (click)="clearForm(myForm)"><mat-icon  fontIcon="close"></mat-icon></i>
 </div>
 <div *ngIf="show && items.length!=0" class="container-list" >
@@ -15,7 +15,7 @@
             'background-color': selectedItemIndex === i ? '#E0E0E0' : ''
         }" class="options" (click)="captureText(item, i)">
             <i *ngIf="iconListLeft" class="icon options-icon mat"><mat-icon  fontIcon="{{itemsLeftIcon}}+' icon options-icon'"></mat-icon></i>
-            <p class="list-item options-icon paragraph">{{item.message ? item.message : item}}</p>
+            <p class="list-item options-icon paragraph {{iconListLeft}}">{{item.message ? item.message : item}}</p>
             <i *ngIf="iconListRight" class="icon options-icon mat" (click)="rightIcon()"><mat-icon class="right" fontIcon="{{itemsRightIcon}}+' icon options-icon'"></mat-icon></i>
         </div>
     </ul>
