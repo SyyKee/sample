@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  car: string = '';
-  title = 'Angular-custom-autocomplete';
+  items =["option1","option2","aption3","test1","bill","hey"]
 
 }

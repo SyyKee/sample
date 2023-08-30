@@ -7,6 +7,7 @@ import { AutoSearchComponent } from './components/auto-search.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './pipe/filter.pipe';
 import { ClickedOutsideDirective } from './directives/click-outside.directive';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ClickedOutsideDirective } from './directives/click-outside.directive';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

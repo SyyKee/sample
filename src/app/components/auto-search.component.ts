@@ -9,19 +9,20 @@ import { NgForm } from '@angular/forms';
 })
 export class AutoSearchComponent {
  
+@Input() items
 @Input() iconListLeft = false;
 @Input() iconListRight = false;
 @Input() disabled = false;
 @Input() deviderLocation: number;
 
-@Input() itemsLeftIcon ="fa fa-search icon options-icon";
-@Input() itemsRightIcon ="fa fa-close icon options-icon";
+@Input() itemsLeftIcon ="search";
+@Input() itemsRightIcon ="close";
 
 show:boolean =false;
 cross:boolean =false;
 border:boolean =false;
 term:any;
-items =["option1","option2","aption3","test1","bill","hey"]
+
 capturedText: string = '';
 selectedItemIndex: number | null = null;
 

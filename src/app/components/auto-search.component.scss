@@ -39,6 +39,7 @@ i{
  
 .input-icons {
     width: 320px;
+    height: 40px;
     margin-bottom: 10px;
     border-radius: 2px;
     display: flex;
@@ -59,10 +60,13 @@ i{
 .last i{
     margin-left: auto;
 }
+.last mat-icon{
+    font-size: 20px;
+    padding-right: 5px;
+}
 
 .icon {
-    padding: 15px;
-    padding-left: 0;
+    padding: 7px 0px 0px 15px; 
     min-width: 40px;
 }
  
@@ -101,6 +105,17 @@ i{
     margin: 0px;
     padding: 0px;
     padding-left: 0px !important;
+    
+}
+
+.mat{
+    padding-top: 12px;
+}
+
+.right{
+    font-size: 20px;
+    padding-top: 4px;
+    padding-left: 5px;
 }
 .paragraph{
 padding-left: 5px;
