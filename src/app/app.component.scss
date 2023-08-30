@@ -11,10 +11,13 @@ auto-search{
 }
 
 .class1{
-    z-index: 2;
-}
-
-.class2{
     z-index: 1;
 }
 
+.class2{
+    z-index: 2;
+}
+
+//the hover problem can be solve by the z index just create a class with a higher z index
+// for example if you want to add a third auto search add a class named class3 with z index 3 
+//good luck :) 
