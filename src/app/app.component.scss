@@ -1,0 +1,20 @@
+auto-search{
+    position:relative;
+}
+
+.search{
+    height: 700px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.class1{
+    z-index: 2;
+}
+
+.class2{
+    z-index: 1;
+}
+
